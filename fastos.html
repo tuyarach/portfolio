@@ -19,8 +19,6 @@
       <nav aria-label="Primary navigation">
         <ul class="nav-list">
           <li><a href="index.html#work">Work</a></li>
-          <li><a href="fastos.html" aria-current="page">FastOS</a></li>
-          <li><a href="bach-pto.html">Bach PTO</a></li>
           <li><a class="nav-action nav-action-secondary" href="https://www.linkedin.com/in/tuyara-chinbat/">LinkedIn <span aria-hidden="true">↗</span></a></li>
           <li><a class="nav-action" href="mailto:chtuyara@umich.edu">Email</a></li>
         </ul>
@@ -40,7 +38,10 @@
         <div><dt>Team</dt><dd>1 designer, 1 engineer</dd></div>
         <div><dt>Methods</dt><dd>User research, UX design, accessibility</dd></div>
       </dl>
-      <div class="case-banner fastos-visual"></div>
+      <figure class="case-media case-media-hero">
+        <img src="fastos-dashboard.png" width="3840" height="2496" alt="FastOS dashboard with process items and steps arranged beside categorized work elements">
+        <figcaption>High-fidelity process management dashboard.</figcaption>
+      </figure>
     </header>
 
     <div class="case-layout shell">
@@ -106,9 +107,23 @@
           <div class="solution-step">
             <span>01</span><div><h3>Relationships become visible through selection</h3><p>Selecting a process item filters its related process steps; selecting a step then filters the corresponding work elements. The cascade reinforces how the three levels connect.</p></div>
           </div>
+          <figure class="case-media">
+            <video controls playsinline preload="metadata" aria-label="Prototype demonstrating connected process transitions">
+              <source src="fastos-processes-transitions.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="fastos-processes-transitions.mp4">Download the connected process transitions prototype</a>.
+            </video>
+            <figcaption><strong>Connected process transitions.</strong> Selecting a process item reveals its related steps and work elements while preserving sequence and context.</figcaption>
+          </figure>
           <div class="solution-step">
             <span>02</span><div><h3>Search keeps results in sequence</h3><p>Search highlights an item, step, or element while preserving its exact place in the workflow. Engineers can find information quickly without losing the context needed to judge ripple effects.</p></div>
           </div>
+          <figure class="case-media">
+            <video controls playsinline preload="metadata" aria-label="Prototype demonstrating sequential search">
+              <source src="fastos-sequential-search.mp4" type="video/mp4">
+              Your browser does not support embedded video. <a href="fastos-sequential-search.mp4">Download the sequential search prototype</a>.
+            </video>
+            <figcaption><strong>Sequential search.</strong> Search takes the engineer directly to a result while keeping its position in the manufacturing workflow visible.</figcaption>
+          </figure>
         </section>
 
         <section id="impact">
