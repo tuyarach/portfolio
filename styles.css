@@ -69,8 +69,8 @@ a:hover { text-decoration-thickness: 0.15em; }
 .wordmark {
   color: var(--navy-strong);
   font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif;
-  font-size: 1.12rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
   letter-spacing: -0.01em;
   text-decoration: none;
 }
@@ -89,8 +89,8 @@ a:hover { text-decoration-thickness: 0.15em; }
   display: inline-block;
   padding: 0.5rem 0.45rem;
   color: var(--ink);
-  font-size: 0.88rem;
-  font-weight: 600;
+  font-size: 0.82rem;
+  font-weight: 550;
   text-decoration: none;
   border-bottom: 2px solid transparent;
 }
@@ -132,15 +132,15 @@ h1, h2, h3 {
   margin-top: 0;
   color: var(--navy-strong);
   font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif;
-  font-weight: 500;
-  letter-spacing: -0.025em;
-  line-height: 1.07;
+  font-weight: 400;
+  letter-spacing: -0.018em;
+  line-height: 1.08;
 }
 
-h1 { max-width: 17ch; margin-bottom: 3.5rem; font-size: clamp(3rem, 7.4vw, 6.7rem); }
+h1 { max-width: 21ch; margin-bottom: 3.25rem; font-size: clamp(2.55rem, 5.4vw, 4.4rem); }
 h1 em { color: var(--blue); font-weight: inherit; }
-h2 { margin-bottom: 1.25rem; font-size: clamp(2.1rem, 4.4vw, 3.8rem); }
-h3 { margin-bottom: 0.75rem; font-size: clamp(1.5rem, 2.5vw, 2rem); }
+h2 { margin-bottom: 1.25rem; font-size: clamp(1.7rem, 2.8vw, 2.5rem); }
+h3 { margin-bottom: 0.75rem; font-size: clamp(1.3rem, 2vw, 1.7rem); }
 
 p { margin-block: 0 1.25rem; }
 
@@ -227,7 +227,7 @@ p { margin-block: 0 1.25rem; }
 .project-kicker > span { color: var(--muted); font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: 0.95rem; }
 .project-kicker .project-meta { margin: 0; font-size: 0.78rem; font-weight: 650; letter-spacing: 0.05em; text-transform: uppercase; }
 
-.project-copy h3 { margin-top: 1.5rem; font-size: clamp(2rem, 3.8vw, 3.2rem); }
+.project-copy h3 { margin-top: 1.5rem; font-size: clamp(1.7rem, 2.7vw, 2.3rem); }
 
 .metric-list {
   display: grid;
@@ -239,7 +239,7 @@ p { margin-block: 0 1.25rem; }
 }
 
 .metric-list li { padding-top: 1rem; border-top: 2px solid var(--navy); }
-.metric-list strong { display: block; color: var(--navy); font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: 2rem; font-weight: 500; }
+.metric-list strong { display: block; color: var(--navy); font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: 1.75rem; font-weight: 400; }
 .metric-list span { display: block; color: var(--muted); font-size: 0.92rem; }
 
 .text-link, .back-link {
@@ -253,7 +253,7 @@ p { margin-block: 0 1.25rem; }
 .footer-inner p { margin: 0; font-size: 0.85rem; }
 
 .case-hero { padding-block: 4.5rem 6rem; }
-.case-hero h1 { max-width: 18ch; margin-bottom: 2rem; font-size: clamp(2.9rem, 6vw, 5.8rem); }
+.case-hero h1 { max-width: 22ch; margin-bottom: 2rem; font-size: clamp(2.3rem, 4.2vw, 3.8rem); }
 .back-link { display: inline-block; margin-bottom: 4rem; }
 
 .project-facts {
@@ -299,7 +299,7 @@ blockquote p { margin: 0; }
 .callout-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: 2rem; }
 .callout-grid.three-up { grid-template-columns: repeat(3, 1fr); }
 .callout-grid div { padding: 1.5rem; border: 1px solid var(--line); border-radius: 0; background: transparent; }
-.callout-grid strong { display: block; color: var(--navy); font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: 2.25rem; font-weight: 500; }
+.callout-grid strong { display: block; color: var(--navy); font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: 2rem; font-weight: 400; }
 .callout-grid span { display: block; color: var(--muted); }
 
 .insight-list { padding-left: 1.25rem; }
@@ -316,7 +316,7 @@ tbody th { color: var(--navy-strong); }
 .solution-step > span { color: var(--blue); font-size: 1.1rem; font-weight: 800; }
 
 .impact-stat { margin: 2.5rem 0; padding: 2rem; border-radius: 0; background: var(--navy); color: #fff; }
-.impact-stat strong { display: block; font-size: clamp(3rem, 7vw, 5rem); line-height: 1; }
+.impact-stat strong { display: block; font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: clamp(2.75rem, 5vw, 4rem); font-weight: 400; line-height: 1; }
 .impact-stat span { display: block; margin-top: 0.5rem; font-size: 1.05rem; }
 
 .tool-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; margin: 2rem 0; }
@@ -338,7 +338,7 @@ tbody th { color: var(--navy-strong); }
   background: transparent;
 }
 .next-project span:first-child { color: var(--muted); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; }
-.next-project a { font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 800; }
+.next-project a { font-family: "Iowan Old Style", "Palatino Linotype", Baskerville, Georgia, serif; font-size: clamp(1.35rem, 2.4vw, 1.8rem); font-weight: 500; }
 
 @media (max-width: 52rem) {
   .header-inner { align-items: flex-start; flex-direction: column; padding-block: 1.1rem; }
