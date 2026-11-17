@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A product design case study about restructuring AI manufacturing process management for engineers.">
+  <title>FastOS Process Management — Tuyara Chinbat</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="wordmark" href="index.html">Tuyara Chinbat</a>
+      <nav aria-label="Primary navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#work" aria-current="page">Work</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="case-hero shell">
+      <a class="back-link" href="index.html#work"><span aria-hidden="true">←</span> Back to selected work</a>
+      <p class="eyebrow">FastOS · Product design</p>
+      <h1>Making an AI manufacturing workflow easier to understand and manage</h1>
+      <p class="case-lede">I restructured a fragmented process management experience so engineers could see how process items, process steps, and work elements connect.</p>
+      <dl class="project-facts">
+        <div><dt>Role</dt><dd>Lead Designer</dd></div>
+        <div><dt>Timeline</dt><dd>2 weeks</dd></div>
+        <div><dt>Team</dt><dd>1 designer, 1 engineer</dd></div>
+        <div><dt>Methods</dt><dd>User research, UX design, accessibility</dd></div>
+      </dl>
+      <div class="case-banner fastos-visual"></div>
+    </header>
+
+    <div class="case-layout shell">
+      <aside class="case-nav">
+        <h2>On this page</h2>
+        <nav aria-label="Case study sections">
+          <ol>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#direction">Design direction</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#impact">Impact</a></li>
+          </ol>
+        </nav>
+      </aside>
+
+      <article class="case-content">
+        <section id="overview">
+          <p class="eyebrow">Overview</p>
+          <h2>Engineers were managing one process across three disconnected views</h2>
+          <p>Manufacturing processes have three levels: process items, process steps, and work elements. The original interface separated each level into its own tab, making their relationships hard to understand and making edits harder to evaluate in context.</p>
+          <blockquote>
+            <p>The core design question became: how might we show the connection between all three levels while giving engineers enough context to review them at a glance?</p>
+          </blockquote>
+          <div class="callout-grid">
+            <div><strong>44</strong><span>related support tickets reviewed</span></div>
+            <div><strong>3</strong><span>connected levels that needed one coherent view</span></div>
+          </div>
+        </section>
+
+        <section id="research">
+          <p class="eyebrow">Research</p>
+          <h2>Four interviews revealed how engineers think about process information</h2>
+          <p>I combined interviews with manufacturing staff, support-ticket analysis, and a review of competing products. Four insights shaped the design:</p>
+          <ol class="insight-list">
+            <li><strong>Changes create ripple effects.</strong> Engineers need to see how an edit to one object affects the rest of a process.</li>
+            <li><strong>Most processes are already established.</strong> Engineers usually know the available processes and focus on reviewing or making targeted edits.</li>
+            <li><strong>AI output needs context.</strong> Skepticism grows when extracted information cannot be reviewed in its full sequence.</li>
+            <li><strong>The page supports review more than creation.</strong> The interface needed to make scanning and finding information fast.</li>
+          </ol>
+        </section>
+
+        <section id="direction">
+          <p class="eyebrow">Design direction</p>
+          <h2>Balancing complete information with manageable cognitive load</h2>
+          <p>I compared two directions before moving into the final interaction model.</p>
+          <div class="table-wrap" tabindex="0">
+            <table>
+              <caption>Comparison of early design directions</caption>
+              <thead><tr><th scope="col">Direction</th><th scope="col">Strength</th><th scope="col">Tradeoff</th></tr></thead>
+              <tbody>
+                <tr><th scope="row">Card view</th><td>Shows complete AI-extracted information for review.</td><td>Creates high cognitive load when processes contain many steps and elements.</td></tr>
+                <tr><th scope="row">Condensed table</th><td>Makes relationships easier to scan and navigate.</td><td>Requires details to be progressively disclosed rather than shown all at once.</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p>The research favored a condensed sequential view. Engineers already knew most process content, so the interface could prioritize hierarchy, relationships, and quick access to details.</p>
+        </section>
+
+        <section id="solution">
+          <p class="eyebrow">Solution</p>
+          <h2>An interconnected interface that preserves process context</h2>
+          <div class="solution-step">
+            <span>01</span><div><h3>Relationships become visible through selection</h3><p>Selecting a process item filters its related process steps; selecting a step then filters the corresponding work elements. The cascade reinforces how the three levels connect.</p></div>
+          </div>
+          <div class="solution-step">
+            <span>02</span><div><h3>Search keeps results in sequence</h3><p>Search highlights an item, step, or element while preserving its exact place in the workflow. Engineers can find information quickly without losing the context needed to judge ripple effects.</p></div>
+          </div>
+        </section>
+
+        <section id="impact">
+          <p class="eyebrow">Impact</p>
+          <h2>The shipped design cut weekly support requests in half for the measured customer group</h2>
+          <p>After release, process-page support requests from three customers fell from two per week to one per week. The result suggested that making the hierarchy visible reduced the need for founder-led explanation and support.</p>
+          <div class="impact-stat"><strong>50%</strong><span>reduction in related weekly support tickets</span></div>
+          <h3>What I learned</h3>
+          <p>Limited time and startup resources required a pragmatic research approach. Interviews with engineering and manufacturing contacts, existing support conversations, and competitor patterns created enough evidence to make a focused decision and ship it.</p>
+          <p class="source-note">This case study is adapted from <a href="https://tuyara.framer.website/project-fastos">the original FastOS project page <span aria-hidden="true">↗</span></a>.</p>
+        </section>
+      </article>
+    </div>
+
+    <nav class="next-project shell" aria-label="Project pagination">
+      <span>Next case study</span>
+      <a href="bach-pto.html">Bach Elementary PTO platform research <span aria-hidden="true">→</span></a>
+    </nav>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-inner"><p>Designed and built with accessibility in mind.</p><p>© 2026 Tuyara Chinbat</p></div>
+  </footer>
+</body>
+</html>
