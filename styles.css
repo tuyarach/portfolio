@@ -363,6 +363,14 @@ p { margin-block: 0 1.25rem; }
 }
 .case-media figcaption strong { color: var(--ink); font-weight: 650; }
 
+.case-media-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0 3rem;
+}
+.case-media-grid .case-media { margin: 0; }
+
 .case-layout {
   display: grid;
   grid-template-columns: 10rem minmax(0, 1fr);
@@ -539,6 +547,7 @@ tbody th { color: var(--navy-strong); }
   .project-card-reverse .project-visual { order: 0; }
   .project-visual { min-height: 20rem; }
   .project-facts { grid-template-columns: repeat(2, 1fr); }
+  .case-media-grid { grid-template-columns: 1fr; gap: 2rem; }
   .case-layout { grid-template-columns: 1fr; }
   .case-nav { position: static; padding: 1.25rem; border-radius: 0.5rem; background: var(--wash); }
   .case-nav ol { columns: 2; }
